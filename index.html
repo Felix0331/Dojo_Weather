@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,71 +8,83 @@
     <link rel="stylesheet" href="style.css">
     <title>Dojo Weather</title>
 </head>
+
 <body>
     <div class="container">
-<!-- Nav Bar -->
+        <!-- Nav Bar -->
         <div class="nav">
             <h1>DojoWeather</h1>
             <ul class="cities">
-                <li>Burbank</li>
-                <li>Chicago</li>
-                <li>Dallas</li>
+                <li onclick="alert('Loading weather report...')">Burbank</li>
+                <li onclick="alert('Loading weather report...')">Chicago</li>
+                <li onclick="alert('Loading weather report...')">Dallas</li>
             </ul>
         </div>
-<!-- Banner -->
+        <!-- Banner -->
         <div class="banner">
             <h2>San Jose</h2>
             <div class="select-type">
-                <label for="met-imp">show temperature in</label>
-                <select name="met-imp" id="met-imp">
-                    <option value="c">°C</option>
+                <label>show temperature in</label>
+                <select onchange="convertWeather()" name="met-imp" id="selector">
                     <option value="f">°F</option>
+                    <option value="c">°C</option>
                 </select>
             </div>
         </div>
         <hr>
 
-<!-- Main -->
+        <!-- Main -->
         <div class="main">
             <div class="weather-card">
                 <h4>Today</h4>
-                <img id="weather-icon" src="./images/some_rain.png" alt="cloud and rain">
+                <img class="weathericon" src="./images/some_rain.png" alt="cloud and rain">
                 <p>some rain</p>
                 <div class="card-temp">
-                    <h4 class="high">75°</h4>
-                    <h4 class="low">65°</h4>
+                    <h4 class="high"><span class="convert">75</span>°</h4>
+                    <h4 class="low"><span class="convert">65</span>°</h4>
                 </div>
             </div>
             <div class="weather-card">
                 <h4>Tomorrow</h4>
-                <img id="weather-icon" src="./images/some_sun.png" alt="sun">
+                <img class="weathericon" src="./images/some_sun.png" alt="sun">
                 <p>some sun</p>
                 <div class="card-temp">
-                    <h4 class="high">80°</h4>
-                    <h4 class="low">66°</h4>
+                    <h4 class="high"><span class="convert">80</span>°</h4>
+                    <h4 class="low"><span class="convert">66</span>°</h4>
                 </div>
             </div>
             <div class="weather-card">
                 <h4>Friday</h4>
-                <img id="weather-icon" src="./images/some_clouds.png" alt="cloud">
+                <img class="weathericon" src="./images/some_clouds.png" alt="cloud">
                 <p>some clouds</p>
                 <div class="card-temp">
-                    <h4 class="high">69°</h4>
-                    <h4 class="low">61°</h4>
+                    <h4 class="high"><span class="convert">69</span>°</h4>
+                    <h4 class="low"><span class="convert">61</span>°</h4>
                 </div>
             </div>
             <div class="weather-card">
                 <h4>Saturday</h4>
-                <img id="weather-icon" src="./images/some_sun.png" alt="sun">
+                <img class="weathericon" src="./images/some_sun.png" alt="sun">
                 <p>some sun</p>
                 <div class="card-temp">
-                    <h4 class="high">78°</h4>
-                    <h4 class="low">70°</h4>
+                    <h4 class="high"><span class="convert">78</span>°</h4>
+                    <h4 class="low"><span class="convert">70</span>°</h4>
                 </div>
+            </div>
+        </div>
+        <div class="pop-up" id="hide">
+            <h3>Stop! Cookie time</h3>
+            <div class="cookie-body">
+                <img src="./images/cookie.png" alt="icon of a bitten cookie">
+                <p>We use cookies (sadly not the edible ones) to personalize content and ads,<br>
+                    to provide social media features and to analyze our traffic. <a href="#">Read More...</a>
+                </p>
+                <button onclick="hideCookie('hide')">I Accept</button>
             </div>
         </div>
     </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>
