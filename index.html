@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dojo Weather</title>
+</head>
+<body>
+    <div class="container">
+<!-- Nav Bar -->
+        <div class="nav">
+            <h1>DojoWeather</h1>
+            <ul class="cities">
+                <li>Burbank</li>
+                <li>Chicago</li>
+                <li>Dallas</li>
+            </ul>
+        </div>
+<!-- Banner -->
+        <div class="banner">
+            <h2>San Jose</h2>
+            <div class="select-type">
+                <label for="met-imp">show temperature in</label>
+                <select name="met-imp" id="met-imp">
+                    <option value="c">°C</option>
+                    <option value="f">°F</option>
+                </select>
+            </div>
+        </div>
+        <hr>
+
+<!-- Main -->
+        <div class="main">
+            <div class="weather-card">
+                <h4>Today</h4>
+                <img id="weather-icon" src="./images/some_rain.png" alt="cloud and rain">
+                <p>some rain</p>
+                <div class="card-temp">
+                    <h4 class="high">75°</h4>
+                    <h4 class="low">65°</h4>
+                </div>
+            </div>
+            <div class="weather-card">
+                <h4>Tomorrow</h4>
+                <img id="weather-icon" src="./images/some_sun.png" alt="sun">
+                <p>some sun</p>
+                <div class="card-temp">
+                    <h4 class="high">80°</h4>
+                    <h4 class="low">66°</h4>
+                </div>
+            </div>
+            <div class="weather-card">
+                <h4>Friday</h4>
+                <img id="weather-icon" src="./images/some_clouds.png" alt="cloud">
+                <p>some clouds</p>
+                <div class="card-temp">
+                    <h4 class="high">69°</h4>
+                    <h4 class="low">61°</h4>
+                </div>
+            </div>
+            <div class="weather-card">
+                <h4>Saturday</h4>
+                <img id="weather-icon" src="./images/some_sun.png" alt="sun">
+                <p>some sun</p>
+                <div class="card-temp">
+                    <h4 class="high">78°</h4>
+                    <h4 class="low">70°</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

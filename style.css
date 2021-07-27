@@ -1,0 +1,75 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+hr{
+    border:1px solid black;
+    size: 40;
+    width: 63%;
+    margin-bottom: 20px;
+}
+.nav{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    background-color: rgb(28, 170, 236);
+    color: whitesmoke;
+}
+/* =================================== */
+.cities{
+    width: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    list-style: none;
+    justify-content: space-evenly;
+    align-self: center;
+    font-size: 25px;
+}
+/* =================================== */
+.banner{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+
+}
+.select-type{
+    align-self: center;
+    font-size: 20px;
+}
+/* ==================================== */
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.weather-card{
+    background-color: rgb(211, 209, 209);
+    border: 1px solid black;
+    margin: 0 20px;
+}
+.weather-card h4, .weather-card p{
+    text-align: center;
+}
+.weather-card h4{
+    font-size: 20px;
+}
+#weather-icon{
+    border-radius: 50%;
+    height: 125px;
+    width: 125px;
+    padding: 0 30px 0 30px;
+}
+
+.card-temp{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.high{
+    color: Red;
+}
+.low{
+    color:blue;
+}
